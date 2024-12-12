@@ -10,8 +10,8 @@ class Itlog:
     
 scrambbledEgg = Itlog("Scrambled Egg","Egg", "Salt", "Magic Sarap Fuyioh")
 sunnySideUp = Itlog("Sunny Side Up","Egg", "Salt", "Ajinomoto MSG Fuyioh")
-boildEgg = Itlog("Boiled Egg","Egg", None, None)
+omellete = Itlog("Omelette","Egg", "Salt", "MSG Fuyioh")
 
 print(scrambbledEgg._itlog)
 print(sunnySideUp.__asin)
-print(boildEgg)
+print(omellete)

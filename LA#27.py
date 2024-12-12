@@ -10,5 +10,5 @@ for each in turtle:
     print(each.name)
 
 if __name__ == "__main__":
-    test = turtles.Leonardo("Shitty", "Turtle")
-    print(test.name)
+    boiler = turtles.Leonardo("TeaPat", "Turtle")
+    print(boiler.name)

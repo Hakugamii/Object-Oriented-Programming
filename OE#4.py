@@ -48,8 +48,6 @@ class Mage(Character):
         target.health -= 500
         print(f"{self.name} Casts Fireball! on {target.name}.\n{target.name}'s remaining health is {target.health}.\nThe Damage dealt was 500.\n")
 
-        #reduce targets health by a large fixed amount
-
 class Archer(Character):
     def __init__(self, name, health, power):
         super().__init__(name, health, power)
@@ -57,7 +55,6 @@ class Archer(Character):
     def special_move(self, target):
         target.health = target.health - self.power
         print(f"{self.name} shoots Piercing Arrow! on {target.name}.\n{target.name}'s remaining health is {target.health}.\nThe Damage dealt was {self.power}.\n")
-        #ignores target's defense causing damage behave differently across various classes.
 
 class Monster(Character):
     def __init__(self, name, health, power):

@@ -14,6 +14,9 @@ class BankAccount:
     def display_account_info(self):
         print(f"Account Number: {self.__account_number}\nBalance: {self.__balance}")
 
+    def __display_balance(self):
+        return print(f"Balance: {self.__balance}")
+
     def get_account_number(self):
         return self.__account_number
     

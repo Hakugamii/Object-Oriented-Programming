@@ -16,12 +16,13 @@ class Itlog:
     
     def change(self, new_val):
         self.__asin = new_val
+
 scrambbledEgg = Itlog("Scrambled Egg","Egg", "Salt", "Magic Sarap Fuyioh")
 sunnySideUp = Itlog("Sunny Side Up","Egg", "Salt", "Ajinomoto MSG Fuyioh")
 boildEgg = Itlog("Boiled Egg","Egg", None, None)
 
 print(scrambbledEgg.accessItlog())
 print(sunnySideUp.accessAsin())
-sunnySideUp.change("Salt bae")
+sunnySideUp.change("Kosher Salt")
 print(sunnySideUp.accessAsin())
 print(boildEgg)

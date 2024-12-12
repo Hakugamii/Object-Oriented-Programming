@@ -12,6 +12,7 @@ class Player:
 
     def heal(self, amount):
         self.health = self.health + amount
+        
 zetsu = Player("Zetsuzen", 2134, 219)
 shinra = Player("Shinra", 2234, 209)
 
@@ -27,13 +28,15 @@ while (zetsu.health > 1) and (shinra.health > 1):
         zetsu_luck = random.randint(1,10)
         if (zetsu_luck > shinra_luck) and (zetsu.health > 1):
             zetsu.heal(healamount)
-            print(f"Zetsuzen's luck was higher. Zetsuzen Healed {healamount} Health")
+            print(f"{zetsu.name}'s luck was higher. {zetsu.name} Healed {healamount} Health")
         elif (shinra_luck > zetsu_luck) and (shinra.health > 1):
             shinra.heal(healamount)
-            print(f"Shinra's luck was higher. Shinra Healed {healamount} Health")
+            print(f"{shinra.name}'s luck was higher. {shinra.name} Healed {healamount} Health")
         else:
-            print("You are both lucky no one gets a heal")
-    if shinra.health < 1:
+            print("You are luck is the same no one gets a heal")
+    if shinra.health < 1 and zetsu.health < 1:
+        print("Draw")
+    elif shinra.health < 1:
         print("Zetsu Wins!")
     elif zetsu.health < 1:
         print("Shinra Wins!")

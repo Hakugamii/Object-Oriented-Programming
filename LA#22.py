@@ -1,4 +1,4 @@
-class party:
+class Party:
     def __init__(self, foods, special, secretDish):
         self.foods = foods
         self.special = special
@@ -11,9 +11,9 @@ class party:
     def __secretDishGetter(self):
         print(f"The secret dish is {self.secretDish}.")
 
-backyardParty = party("Barbeque, Smores, Hotdogs, Corns", "Brisket", "Grilled Salmon")
-birthday = party("Spaghetti, Coffee Jelly, Lechon Kawali, Mashed Potatoes, Chocolate Cake", "Roasted Turkey", "Hamonado")
-pajamaParty = party("Pizza, Popcorn, Onion Rings, Hot Cocoa", "French Fries and Chips", "Shawarma")
+backyardParty = Party("Barbeque, Smores, Hotdogs, Corns", "Brisket", "Grilled Salmon")
+birthday = Party("Spaghetti, Coffee Jelly, Lechon Kawali, Mashed Potatoes, Chocolate Cake", "Roasted Turkey", "Hamonado")
+pajamaParty = Party("Pizza, Popcorn, Onion Rings, Hot Cocoa", "French Fries and Chips", "Shawarma")
 
 backyardParty.dishes()
 birthday.dishes()

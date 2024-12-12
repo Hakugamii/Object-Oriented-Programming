@@ -21,5 +21,5 @@ class TwitterAccount(SocialMediaAccount):
         super().__init__(username, password)
         self.number_of_tweets = number_of_tweets
 
-    def tweets(self):
+    def tweet(self):
         pass
