@@ -2,7 +2,10 @@ import os
 from pathlib import Path
 import shutil
 
-def list_files(directory):
+directoryOE = "Z:/Users/zetsuzen/Documents/SchoolActivities/Python/OOP-and-CISCO-OOP_Dump/OE/"
+directoryLA = "Z:/Users/zetsuzen/Documents/SchoolActivities/Python/OOP-and-CISCO-OOP_Dump/LA/"
+
+def create_folder(directory):
     for file in os.listdir(directory):
         path = os.path.join(directory, file)
         if (os.path.isfile(path) and file != "foldercreate.py"):
@@ -12,6 +15,16 @@ def list_files(directory):
             Path(directoryName).mkdir()
             shutil.move(path, moveDirectory)
 
+def rename_folder(directory):
+    for folder in os.listdir(directory):
+        path = os.path.join(directory, folder)
+        if os.path.isdir(path):
+            foldername = folder[3:]
+            newfoldername = os.path.join(directory, foldername)
+            os.rename(path, newfoldername)
 
-directory = "Z:/Users/zetsuzen/Documents/SchoolActivities/Python/OOP-and-CISCO-OOP_Dump/"
-list_files(directory)
+create_folder(directoryLA)
+create_folder(directoryOE)
+
+rename_folder(directoryLA)
+rename_folder(directoryOE)
