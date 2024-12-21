@@ -1,1 +1,2 @@
-# School-Things
+# OOP
+# Belmonte, Sean Rodg M.
